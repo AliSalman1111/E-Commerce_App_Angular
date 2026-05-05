@@ -19,6 +19,10 @@ body {
      .btn-main {
     @apply bg-green-600 py-1.75 px-5 border border-gray-300 rounded-[5px] text-white cursor-pointer disabled:cursor-not-allowed disabled:bg-gray-300 disabled:hover:bg-gray-300 hover:bg-green-700 transition-[background-color] duration-500;
             }
+
+            .card{
+               @apply shadow rounded border-gray-200 overflow-hidden p-2
+            }
             
 }
 
