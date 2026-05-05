@@ -21,7 +21,7 @@ body {
             }
 
             .card{
-               @apply shadow rounded border-gray-200 overflow-hidden p-2
+               @apply shadow rounded border-gray-200  p-2
             }
             
 }

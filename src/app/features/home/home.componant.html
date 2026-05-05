@@ -1,23 +1,11 @@
 <section class="p-16">
     <div class="container">
-        <div class="parent grid gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 ">
+
+      <h2 class="text-2xl text-green-600 font-medium">Shop Popular Products </h2>
+        <div class="parent mt-7 grid gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 ">
 
           @for (product of productlist().slice(0,10);track product.id ){
-              <div class="card flex flex-col ">
-
-                <img [src]="product.imageCover" [alt]="product.title">
-               <h3 class="text-sm text-green-600">{{product.category.name}}</h3>
-               <h4 class="pb-2">{{product.title}}</h4>
-               <div class="flex flex-wrap text-center justify-between">
-                <span>{{product.price}}</span>
-
-                <span> 
-                    <i class="fas fa-star text-yellow-500"></i>
-                    {{product.ratingsAverage}}   
-                </span>
-               </div>
-               <button class="btn-main w-full mt-auto">Add to Cart </button>
-            </div>
+           <app-card [cardProduct]="product" ></app-card>
           }
 
         </div>

@@ -1,10 +1,11 @@
 import { Component, inject, OnInit, signal, WritableSignal } from '@angular/core';
 import { IProductService } from '../../core/services/products/iproduct.service';
 import { Product } from '../../core/models/ptoducts/product.interface';
+import { CardComponant } from '../../shared/componants/card/card.componant';
 
 @Component({
   selector: 'app-home',
-  imports: [],
+  imports: [CardComponant],
   templateUrl: './home.componant.html',
   styleUrl: './home.componant.css',
 })
