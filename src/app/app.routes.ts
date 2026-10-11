@@ -79,7 +79,7 @@ component:MainLayoutComponant,
             },
 
                       {
-                path:'details',
+                path:'details/:slog/:id',
                 component:DetailesComponant,
                 title:'Details'
             },

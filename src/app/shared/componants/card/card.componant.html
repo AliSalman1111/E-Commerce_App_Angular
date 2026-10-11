@@ -1,7 +1,11 @@
+   
+   
+   
    <div class="card overflow-hidden flex flex-col h-full ">
-                <img [src]="cardProduct.imageCover" [alt]="cardProduct.title">
+       <div  [routerLink] = "['/details',cardProduct.slug ,cardProduct._id]" class="cursor-pointer">
+                 <img [src]="cardProduct.imageCover" [alt]="cardProduct.title">
                <h3 class="text-sm text-green-600">{{cardProduct.category.name}}</h3>
-               <h4 class="pb-2">{{cardProduct.title}}</h4>
+               <h4 class="pb-2">{{cardProduct.title.split(" ",2).join(" ")}}</h4>
                <div class="flex flex-wrap text-center justify-between">
                 <span>{{cardProduct.price}}</span>
 
@@ -9,6 +13,33 @@
                     <i class="fas fa-star text-yellow-500"></i>
                     {{cardProduct.ratingsAverage}}   
                 </span>
-               </div>
+                </div>
+       </div>
                <button class="btn-main w-full mt-auto">Add to Cart </button>
             </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                     
+
+
+
+
+
+
+
+
+            

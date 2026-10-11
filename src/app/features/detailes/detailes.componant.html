@@ -1,1 +1,33 @@
-<p>detailes works!</p>
+<section class="py-16">
+    <div class="container mx-auto ">
+
+        <div class="grid sm:grid-cols-12 items-center">
+            <div class="col-span-3">
+<div>
+                     <img [src]="productDetaileData().imageCover" [alt]="productDetaileData().title">
+
+</div>
+            </div>
+
+            <div class="col-span-9">
+<div class="content">
+    
+    <h2 class="pb-2">{{productDetaileData().title}}</h2>
+<p class="text-base pb-2 "> 
+    {{productDetaileData().description}}
+</p>
+      <h3 class="text-sm text-green-600">{{productDetaileData().category.name}}</h3>
+               <div class="flex flex-wrap text-center justify-between">
+                <span>{{productDetaileData().price}}</span>
+
+                <span> 
+                    <i class="fas fa-star text-yellow-500"></i>
+                    {{productDetaileData().ratingsAverage}}   
+                </span>
+                </div>
+</div>
+            </div>
+        </div>
+
+    </div>
+</section>
